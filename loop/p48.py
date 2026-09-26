@@ -1,0 +1,11 @@
+start = int(input("Enter starting number: "))
+end = int(input("Enter ending number: "))
+
+for n in range(start, end + 1):
+    print("Factors of", n, end=": ")
+    
+    for i in range(1, n + 1):
+        if n % i == 0:
+            print(i, end=" ")
+    
+    print()
